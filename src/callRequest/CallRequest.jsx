@@ -16,9 +16,10 @@ const SignUpForm = () => {
 
     const [sendedMessage, setSendedMessage] = useState(defaultSendedMessage);
 
-    const onClickHandler = (e) => {
-        console.log(sendedMessage);
-    }
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    console.log(sendedMessage);
+  };
 
 const onChangeHandler = (e) => {
     const { name, value } = e.target;
@@ -26,11 +27,11 @@ const onChangeHandler = (e) => {
         ...prevMessage,
         [name]: value,
     }));
-    }
+  }
 
     return (
       <div className="request-container">
-        <div className="request-app">
+        <form onSubmit={onSubmitHandler} className="form">
           <h1 className="request-text">
             Ask your question
             <Player
@@ -114,7 +115,9 @@ const onChangeHandler = (e) => {
             value={sendedMessage.message}
           />
           <Button
+            type="submit"
             sx={{
+              marginBottom: "25px",
               fontSize: "1.5rem",
               width: {
                 xs: "300px",
@@ -125,11 +128,10 @@ const onChangeHandler = (e) => {
               },
             }}
             variant="contained"
-            onClick={onClickHandler}
           >
             Send
           </Button>
-        </div>
+        </form>
       </div>
     );
 }
