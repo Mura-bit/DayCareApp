@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import NanniesCard from "./nanniesCard/NanniesCard";
+import MainPage from "./components/mainPage/MainPage";
+import Navigation from "./components/navigation/Navigation";
+import Footer from "./components/footer/Footer";
+import ImageGallery from "./components/imageGallery/ImageGallery";
+import GoogleMapsDirections from "./components/googleMapsDirections/GoogleMapsDirections";
+import CallRequest from "./callRequest/CallRequest.jsx";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigation />
+      <MainPage />
+      <NanniesCard />
+      <ImageGallery />
+      <GoogleMapsDirections />
+      <CallRequest />
+      <Footer />
     </div>
   );
 }

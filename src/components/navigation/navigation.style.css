@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+  .tlbar {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  a:link {
+    color: rgb(255, 255, 255);
+  }
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}

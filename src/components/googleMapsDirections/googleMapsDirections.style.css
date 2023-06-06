@@ -1,0 +1,71 @@
+.google-directions-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px auto;
+  padding: 30px;
+  width: 70%;
+  color: white;
+  border-radius: 50% 50% 26% 74% / 56% 74% 26% 44%;
+  background-color: #1a7431;
+  gap: 40px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.google-directions-bg {
+  background-color: #208b3a;
+  padding: 20px;
+}
+
+.google-maps-player {
+  width: 400px;
+  height: 400px;
+}
+
+.google-directions-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.google-map-directions {
+  width: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+  .google-directions-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .google-directions-container {
+    padding: 0;
+  }
+
+  .google-map-directions {
+    width: 100%;
+  }
+
+  .google-maps-player {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .google-directions-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .google-map-directions {
+    padding-top: 20px;
+  }
+
+  .google-maps-player {
+    width: 200px;
+    height: 200px;
+  }
+}

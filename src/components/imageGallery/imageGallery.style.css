@@ -1,0 +1,11 @@
+.img-gallery {
+  margin: 0 auto;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .img-gallery {
+    max-width: 100%;
+  }
+}

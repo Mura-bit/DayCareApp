@@ -1,0 +1,42 @@
+.request-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #051937, #184568, #2e769a, #4aabc9, #71e3f4);
+
+}
+
+.request-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 600px;
+    height: 600px;
+    background-color: #dfdfe9;
+    border-radius: 8px
+}
+
+.request-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    width: 400px;
+    height: 60px;
+    font-size: 2.5rem;
+    color: #051937;
+    text-align: center;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    .request-app {
+        width: 350px;
+    }
+    .request-text {
+        width: 300px;
+        font-size: 2.2rem;
+    }
+}
+
