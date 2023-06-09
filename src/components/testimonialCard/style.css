@@ -1,0 +1,136 @@
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-top: 5rem;
+}
+
+.card-container {
+  width: 80%;
+  max-height: 60%;
+  margin-left: 10%;
+  background: #ccecfc;
+  border-radius: 2rem;
+}
+
+.each-slide-effect p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+  padding: 2rem;
+  font-size: 1rem;
+  background: none;
+  /* text-align: center; */
+}
+
+.rating-starts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.quote-img-top {
+  position: absolute;
+  margin-left: 11rem;
+  margin-top: -2rem;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  width: 5rem;
+}
+
+@media screen and (max-width: 950px) {
+  .quote-img-top {
+    margin-left: 2rem;
+    margin-top: -1rem;
+    width: 3.5rem;
+  }
+}
+
+.quote-img-bottom {
+  margin-left: 86.5%;
+  width: 5rem;
+  margin-top: -3%;
+  transform: scale(-1);
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .quote-img-bottom {
+    margin-left: 19rem;
+    margin-top: -3rem;
+    width: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 926px) {
+  .quote-img-bottom {
+    margin-left: 20.5rem;
+    margin-top: -3rem;
+    width: 3.5rem;
+  }
+}
+
+/* Samsung Galaxy S20 Ultra */
+@media screen and (max-width: 915px) {
+  .quote-img-bottom {
+    margin-left: 19.5rem;
+    margin-top: -3rem;
+    width: 3.5rem;
+  }
+}
+
+/* IPhone XR */
+@media screen and (max-width: 896px) {
+  .quote-img-bottom {
+    margin-left: 20rem;
+    margin-top: -4rem;
+    width: 3.5rem;
+  }
+}
+
+/* Iphone 12Pro */
+
+@media screen and (max-width: 844px) {
+  .quote-img-bottom {
+    margin-left: 5rem;
+    margin-top: -4rem;
+    width: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .quote-img-bottom {
+    margin-left: 10rem;
+    margin-top: -4rem;
+    width: 3.5rem;
+  }
+}
+
+/* Samsung Galaxy S8+ */
+
+@media screen and (max-width: 740px) {
+  .quote-img-bottom {
+    /* background-color: red; */
+    margin-left: 12rem;
+    margin-top: -3rem;
+    width: 3.5rem;
+  }
+}
+
+/* Done   IPhone SE*/
+@media screen and (max-width: 667px) {
+  .quote-img-bottom {
+    margin-left: 17.5rem;
+    margin-top: -4rem;
+    width: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .review-box {
+    height: 600px;
+  }
+}

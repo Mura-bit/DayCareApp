@@ -1,19 +1,19 @@
 .mainContainer {
-  background-color: #2e2c2c;
+  background-color: #104911;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
-  color: #737373;
+  color: rgb(255, 251, 251);
 }
 .mainContainer h6 {
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   text-transform: uppercase;
   margin-top: 5px;
   letter-spacing: 2px;
 }
 .mainContainer a {
-  color: #737373;
+  color: #ffffff;
 }
 .mainContainer a:hover {
   color: #3366cc;
@@ -27,7 +27,7 @@
   display: block;
 }
 .footer-links a {
-  color: #737373;
+  color: rgb(255, 255, 255);
 }
 .footer-links a:active,
 .footer-links a:focus,
@@ -48,7 +48,7 @@
   margin-left: 6px;
   margin-right: 0;
   border-radius: 100%;
-  background-color: #33353d;
+  background-color: #ffffff;
 }
 .copyright-text {
   margin: 0;

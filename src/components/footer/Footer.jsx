@@ -1,3 +1,4 @@
+import theme from "../../theme";
 import "./footer.style.css";
 
 import React from "react";
@@ -7,7 +8,10 @@ function Footer() {
 
   return (
     <>
-      <footer class="mainContainer">
+      <footer
+        class="mainContainer"
+        style={{ backgroundColor: theme.palette.primary.main }}
+      >
         <div class="containerFooter">
           <div class="row">
             <div class="aboutContainer">
@@ -26,22 +30,22 @@ function Footer() {
               <h6>Quick Links</h6>
               <ul class="footer-links">
                 <li>
-                  <a href="#">Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li>
-                  <a href="#">Why Us</a>
+                  <a href="#whyUs">Why Us</a>
                 </li>
                 <li>
-                  <a href="#">Our Nannies</a>
+                  <a href="#ourNannies">Our Nannies</a>
                 </li>
                 <li>
-                  <a href="#">Reviews</a>
+                  <a href="#reviews">Reviews</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#contactUs">Contact</a>
                 </li>
                 <li>
-                  <a href="#">FAQ</a>
+                  <a href="#faq">FAQ</a>
                 </li>
               </ul>
             </div>
@@ -52,22 +56,22 @@ function Footer() {
           <div class="iconsFooter">
             <ul class="social-icons">
               <li>
-                <a class="facebook" href="#">
+                <a class="facebook" href="#facebook">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a class="twitter" href="#">
+                <a class="twitter" href="#twitter">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li>
-                <a class="dribbble" href="#">
+                <a class="dribbble" href="#dribble">
                   <i class="fa fa-dribbble"></i>
                 </a>
               </li>
               <li>
-                <a class="linkedin" href="#">
+                <a class="linkedin" href="#linkedIn">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
@@ -76,7 +80,7 @@ function Footer() {
           <div class="copyrightFooter">
             <p class="copyright-text">
               {`Copyright  © ${currentYear.getFullYear()} All Rights Reserved by`}
-              <a href="#"> Helen Lucy Child Care</a>.
+              <a href="#footer"> Helen Lucy Child Care</a>.
             </p>
           </div>
         </div>

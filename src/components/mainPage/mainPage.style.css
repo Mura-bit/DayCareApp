@@ -12,6 +12,7 @@
   height: 100vh;
   position: center;
   object-fit: cover;
+  filter: contrast(90%);
 }
 
 .main-page {
@@ -25,13 +26,12 @@
   text-align: right;
   height: 100%;
   color: rgb(255, 255, 255);
-  line-height: 3rem;
-  text-shadow: 4px 4px 13px rgba(0, 0, 0, 0.6);
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
   z-index: 2;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 5rem;
   text-decoration-line: underline;
 }
 
@@ -41,18 +41,10 @@
   padding-left: 0;
 }
 
-.main-list-item {
-  padding-bottom: 30px;
-}
-
-.main-list-item span {
-  color: yellow;
-}
-
 @media screen and (max-width: 900px) {
   .title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .main-page {
